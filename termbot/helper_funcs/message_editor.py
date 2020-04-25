@@ -52,7 +52,7 @@ class MessageEditor():
         await self.redraw()
 
     async def redraw(self, skip_wait=False):
-        text = "<b>Running command</b>: <code>{}<code>".format(self.command) + "\n"
+        text = "<b>Running command</b>: <code>{}</code>".format(self.command) + "\n"
         if self.rc is not None:
             text += "<b>process exited</b> with code <code>{}</code>".format(str(self.rc))
         if len(self.stdout) > 0:
